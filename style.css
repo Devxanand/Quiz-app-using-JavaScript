@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    display: flex;
+    top: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(4, 4, 139);
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* min-height: 55vh; */
+    min-width: 45vw;
+    border-radius: 15px;
+}
+.cardMain{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h1{
+    padding-bottom: 18px;
+    padding-top: 18px;
+    color: rgb(4,4,139);
+    border-bottom: 1px solid black;
+}
+h2{
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+button,.btn{
+    /* width: 27rem; */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px;
+    text-align: start;
+    margin: 8px;
+    cursor: pointer;
+    transition:  all ease .6s;
+}
+button:hover:not([disabled]){
+
+    background-color: rgb(4, 4, 139);
+    
+    color: white;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+.next-button{
+     padding-left: 30px;
+     padding-right: 30px;
+     margin-left: 60px;
+     margin-right:0px;
+     margin-top: 30px;
+     color: white;
+     background-color: rgb(4, 4, 139);
+     margin-bottom: 50px;
+     font-size: 13px;
+     display: block;
+}
+.prev-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: rgb(4, 4, 139);
+    margin-bottom: 50px;
+    font-size: 13px;
+    display: none;
+}
+.correct{
+    background-color: rgb(31, 164, 31);
+}
+.incorrect{
+    background-color: rgb(231, 62, 62);
+}
